@@ -20,6 +20,8 @@ let scores, currentScore, activePlayer, playing;
 // score1.textContent = 0;
 // diceEL.classList.add('hidden');
 
+
+//initial condition of game
 const initialCondition = function () {
   playing = true;
   currentScore = 0;
@@ -36,6 +38,8 @@ const initialCondition = function () {
   player1.classList.remove('player--winner');
 };
 
+
+//function for swithing the player
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   activePlayer = activePlayer === 0 ? 1 : 0;
